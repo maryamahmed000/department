@@ -8,7 +8,8 @@ const Login = ({ setUser }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch('/api/login', {
+      const res = await fetch('https://department-jly2.onrender.com/api/login', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
